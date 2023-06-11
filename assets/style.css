@@ -1,0 +1,24 @@
+.wp-block-navigation .wp-block-search .wp-block-search__label {
+  display: none;
+}
+.wp-block-navigation .wp-block-search .wp-block-search__input {
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+.wp-block-navigation .wp-block-search .wp-block-search__button {
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 0;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .wp-block-cover p.has-x-large-font-size {
+    max-width: 1050px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

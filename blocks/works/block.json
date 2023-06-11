@@ -1,0 +1,32 @@
+{
+  "name": "acf/works",
+  "title": "Works",
+  "description": "Works block.",
+  "style": "block-works",
+  "script": "block-works",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["works", "portfolio"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "works.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "alignContent": false,
+    "color": {
+      "text": false,
+      "background": true,
+      "link": false
+    },
+    "alignText": false,
+    "fullHeight": false
+  },
+  "attributes": {
+    "backgroundColor": {
+      "type": "string",
+      "default": "tertiary"
+    }
+  }
+}
