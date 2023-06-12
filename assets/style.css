@@ -26,4 +26,9 @@
   margin: 0;
 }
 
+.wp-block-button.is-style-big .wp-block-button__link {
+  padding-top: min(2rem, 8vw) !important;
+  padding-bottom: min(2rem, 8vw) !important;
+}
+
 /*# sourceMappingURL=style.css.map */

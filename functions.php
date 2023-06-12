@@ -9,7 +9,7 @@
  * @subpackage Mosne_FSE
  */
 
-function mosne_is_min_debug(string $path) : string
+function mosne_is_min_debug(string $path): string
 {
     if (defined('MOSNE_DEBUG') && MOSNE_DEBUG) {
         return $path;
@@ -91,3 +91,20 @@ function register_acf_blocks(): void
 }
 
 add_action('init', 'register_acf_blocks');
+
+/** Register custom block styles
+ * @return void
+ */
+function register_custom_block_styles(): void
+{
+    // Register block styles for the "core/button" block.
+    register_block_style(
+        'core/button',
+        array(
+            'name' => 'big',
+            'label' => __('Big Button', 'mosne'),
+        )
+    );
+}
+
+add_action('init', 'register_custom_block_styles');
