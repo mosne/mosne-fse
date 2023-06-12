@@ -2,12 +2,14 @@
 /**
  * Theme functions and definitions
  *
+ * @param string $path
+ * @return string
+ * @since Mosne_FSE 1.0
  * @package WordPress
  * @subpackage Mosne_FSE
- * @since Mosne_FSE 1.0
  */
 
-function mosne_is_min_debug($path)
+function mosne_is_min_debug(string $path) : string
 {
     if (defined('MOSNE_DEBUG') && MOSNE_DEBUG) {
         return $path;
@@ -65,6 +67,10 @@ function mosne_register_block_styles(string $handle = '', string $path = '', arr
  * @param string $version
  * @param bool $in_footer
  * @return void
+ * usage: in wp-config.php
+ * if ( ! defined( 'MOSNE_DEBUG' ) ) {
+ * define( 'MOSNE_DEBUG', true );
+ * }
  */
 function mosne_register_block_script(string $handle = '', string $path = '', array $dependencies = [], string $version = '', bool $in_footer = false): void
 {
