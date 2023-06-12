@@ -4,6 +4,7 @@
  * Slug: mosne/strength
  * Block Types: core/banner
  * Categories: featured
+ * locked: true
  */
 ?>
 <!-- wp:separator {"backgroundColor":"white","className":"is-style-default"} -->
