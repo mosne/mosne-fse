@@ -26,17 +26,16 @@ if ( ! empty( $block['align'] ) ) {
 	$class_name .= ' align' . $block['align'];
 }
 
-// Load values and assign defaults.
-$background_color = get_field( 'background_color' );
-$text_color       = get_field( 'text_color' );
-
-// Build a valid style attribute for background and text colors.
-$styles = array( 'background-color: ' . $background_color, 'color: ' . $text_color );
-$style  = implode( '; ', $styles );
+$image = get_field('image');
 
 ?>
-<div <?php echo $anchor; ?>class="<?php echo esc_attr( $class_name ); ?>" style="<?php echo esc_attr( $style ); ?>">
+<div <?php echo $anchor; ?> class="<?php echo esc_attr( $class_name ); ?>">
 	<div class="works">
 		hello world
+		<?php
+		if ( $image ) {
+			echo mosne_image( $image, 'large', 'figure', true );
+			echo mosne_image( $image, 'thumbnail', '', false );
+		} ?>
 	</div>
 </div>
