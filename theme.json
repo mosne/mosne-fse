@@ -39,12 +39,12 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "#e3cbc0",
+					"color": "#fcddec",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#cd3131",
+					"color": "#f5b8b8",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
