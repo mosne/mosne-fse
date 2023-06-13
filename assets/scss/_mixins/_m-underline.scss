@@ -1,0 +1,73 @@
+/**
+ * underline
+ *
+ * Animated Underline Hover
+ */
+
+@mixin underline-not-hover($stroke:1px,$speed:.35s) {
+    display: inline;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% $stroke;
+    transition: background-size $speed ease-in-out;
+}
+
+@mixin underline($stroke:1px,$speed:.35s) {
+    @include underline-not-hover($stroke, $speed);
+
+    @include hover {
+        @include underline-hover($stroke);
+    }
+}
+
+@mixin underline-hover($stroke:1px) {
+    background-size: 0% $stroke;
+}
+
+@mixin underline-data-seo($stroke:1px,$speed:.35s) {
+    .underline {
+        @include underline-not-hover($stroke, $speed);
+    }
+
+    @include hover {
+        .underline {
+            @include underline-hover($stroke);
+        }
+    }
+}
+
+@mixin tounderline-not-hover($stroke:1px,$speed:.35s) {
+    display: inline;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0% $stroke;
+    transition: background-size $speed ease-in-out;
+}
+
+@mixin tounderline($stroke:1px,$speed:.35s) {
+    @include tounderline-not-hover($stroke, $speed);
+
+    @include hover {
+        @include tounderline-hover($stroke);
+    }
+}
+
+@mixin tounderline-hover($stroke:1px) {
+    background-size: 100% $stroke;
+}
+
+@mixin tounderline-data-seo($stroke:1px,$speed:.35s) {
+    .tounderline {
+        @include tounderline-not-hover($stroke, $speed);
+    }
+
+    @include hover {
+        .tounderline {
+            @include tounderline-hover($stroke);
+        }
+    }
+}

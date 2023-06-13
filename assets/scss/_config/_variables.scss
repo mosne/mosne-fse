@@ -1,0 +1,37 @@
+// ----
+// Breakpoints
+// ----
+$container-default: 680px;
+$container-wide: 1260px;
+// ----
+// Breakpoints
+// ----
+$break-huge: 1440px;
+$break-wide: 1280px;
+$break-xlarge: 1080px;
+$break-large: 960px; // admin sidebar auto folds
+$break-medium: 782px; // adminbar goes big
+$break-small: 600px;
+$break-mobile: 480px;
+$break-zoomed-in: 280px;
+
+$breakpoints: (
+        nano: $break-zoomed-in,
+        mobile: $break-mobile, // 601px is a wordpress breakpoint (admin-bar become sticky)
+        small: $break-small,
+        medium: $break-medium, // admin bar height change
+        large: $break-large,
+        xlarge: $break-xlarge,
+        wide: $break-wide,
+        huge: $break-huge,
+);
+
+// ----
+// Colors
+// ----
+$color-dark: #000;
+$color-light: #fff;
+$color-grey-500: #555;
+
+
+
