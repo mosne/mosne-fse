@@ -127,8 +127,9 @@
 }
 
 .wp-block-button.is-style-big .wp-block-button__link {
-  padding-top: min(2rem, 8vw) !important;
-  padding-bottom: min(2rem, 8vw) !important;
+  padding-top: min(3rem, 6vw) !important;
+  padding-bottom: min(3rem, 6vw) !important;
+  margin: 5px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
