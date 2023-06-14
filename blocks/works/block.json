@@ -14,7 +14,11 @@
   "supports": {
     "align": false,
     "anchor": false,
-    "alignContent": false,
+    "alignContent": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
     "color": {
       "text": false,
       "background": true,
