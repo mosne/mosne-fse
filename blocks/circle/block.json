@@ -1,0 +1,35 @@
+{
+  "name": "acf/circle",
+  "title": "Circle",
+  "description": "Circle block.",
+  "style": "circle",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["circle", "svg", "shape", "round", "roundel", "circle"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "circle.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "alignContent": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "text": false,
+      "background": true,
+      "link": false
+    },
+    "alignText": false,
+    "fullHeight": false
+  },
+  "attributes": {
+    "backgroundColor": {
+      "type": "string",
+      "default": "tertiary"
+    }
+  }
+}

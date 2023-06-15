@@ -18,24 +18,17 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'block-works';
+$class_name = 'block-circle';
 if ( ! empty( $block['className'] ) ) {
 	$class_name .= ' ' . $block['className'];
 }
 if ( ! empty( $block['align'] ) ) {
 	$class_name .= ' align' . $block['align'];
 }
-
-$image = get_field('image');
+$color = get_field('color',get_the_id());
+$circle_style = "background-color: $color";
 
 ?>
 <div <?php echo $anchor; ?> class="<?php echo esc_attr( $class_name ); ?>">
-	<section class="works">
-		hello world
-		<?php
-		if ( $image ) {
-			echo mosne_image( $image, 'large', 'figure', true );
-			echo mosne_image( $image, 'thumbnail', '', false );
-		} ?>
-	</section>
+	<div class="circle" style="<?php echo esc_attr($circle_style);?>"></div>
 </div>

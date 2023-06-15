@@ -1,21 +1,4 @@
 @use "sass:map";
-
-/**
- * Breakpoints
- *
- * examples :
- *
- *      @include breakpoints(sm, md) { ... }
- *          return @media screen and (min-width: 768px) and (max-width: 1024px) { ... }
- *
- *      @include breakpoints(sm, max) { ... }
- *          return @media screen and (max-width: 767px) { ... }
- *
- *      @include breakpoints(sm) or @include breakpoints(sm, min) { ... }
- *          return @media screen and (min-width: 768px) { ... }
- *
- */
-
 @mixin breakpoints($breakpoint, $min-or-max-or-breakpoint: min) {
     $font-size: 16px; // don't use em function whitout param, $font-size-base can be modified
 

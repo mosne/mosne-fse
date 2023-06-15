@@ -1,0 +1,10 @@
+@import '../../assets/scss/_config/variables';
+@import '../../assets/scss/_mixins/mixins';
+.circle {
+  display: block;
+  background: green;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 0 auto;
+}

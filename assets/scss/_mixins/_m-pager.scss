@@ -1,82 +1,81 @@
-/**
- * Pager
- * generate the MMEC pager style : wp-pagenavi and facetwp pager
- *
- * exemple for wp-pagenavi :
- *		.wp-pagenavi {
- *			@include pager(
- *				".previouspostslink",
- *				".nextpostslink",
- *				".page, .current, .extend",
- *				".current",
- *				".page"
- *			);
- *		}
- */
+//
+// Pager
+// generate the MMEC pager style : wp-pagenavi and facetwp pager
+//
+//exemple for wp-pagenavi :
+//		.wp-pagenavi {
+//			@include pager(
+//				".previouspostslink",
+//				".nextpostslink",
+//				".page, .current, .extend",
+//				".current",
+//				".page"
+//			);
+//		}
 
 @mixin pager($prev, $next, $intermediate, $current, $hoverable) {
-    @include container($container-default);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  @include container($container-default);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 106px;
+  font-size: var(--heading--font-size-h4);
+  font-weight: 300;
+  color: $color-grey-500;
+  text-align: center;
+
+  &:empty {
+    display: none;
+  }
+
+  * {
+    margin: 0 5px;
+    border: 0;
+  }
+
+  + * {
     margin-top: 106px;
-    font-size: var(--heading--font-size-h4);
-    font-weight: 300;
-    color: $color-grey-500;
-    text-align: center;
+  }
 
-    &:empty {
-        display: none;
-    }
+  #{$intermediate}#{$next} {
+    @extend %btn-block-circle-arrow-right;
+    margin-left: auto;
+  }
 
-    * {
-        margin: 0 5px;
-        border: 0;
-    }
+  #{$intermediate}#{$prev} {
+    @extend %btn-block-circle-arrow-left;
+    margin-right: auto;
+  }
+
+  #{$intermediate} {
+    margin: 0 5px;
+    color: inherit;
+  }
+
+  [aria-current="true"] {
+    font-weight: 700;
+    color: $color-dark;
+    background: transparent;
+  }
+
+  #{$hoverable}:not(#{$next}, #{$prev}) {
+    @include tounderline();
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @include breakpoints(sm, max) {
+    margin-top: 80px;
 
     + * {
-        margin-top: 106px;
+      margin-top: 56px;
     }
+  }
 
-    #{$intermediate}#{$next} {
-        @extend %btn-block-circle-arrow-right;
-        margin-left: auto;
-    }
-
-    #{$intermediate}#{$prev} {
-        @extend %btn-block-circle-arrow-left;
-        margin-right: auto;
-    }
-
+  @include breakpoints(md) {
     #{$intermediate} {
-        margin: 0 5px;
-        color: inherit;
+      margin: 0 16px;
     }
-
-    [aria-current="true"] {
-        font-weight: 700;
-        color: $color-dark;
-        background: transparent;
-    }
-
-    #{$hoverable}:not(#{$next}, #{$prev}) {
-        @include tounderline();
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    @include breakpoints(sm, max) {
-        margin-top: 80px;
-
-        + * {
-            margin-top: 56px;
-        }
-    }
-
-    @include breakpoints(md) {
-        #{$intermediate} {
-            margin: 0 16px;
-        }
-    }
+  }
 }
