@@ -22,8 +22,8 @@ $class_name = 'block-circle';
 if ( ! empty( $block['className'] ) ) {
 	$class_name .= ' ' . $block['className'];
 }
-if ( ! empty( $block['align'] ) ) {
-	$class_name .= ' align' . $block['align'];
+if ( ! empty( $block['alignText'] ) ) {
+	$class_name .= ' align' . $block['alignText'];
 }
 $color = get_field('color',get_the_id());
 $circle_style = "background-color: $color";

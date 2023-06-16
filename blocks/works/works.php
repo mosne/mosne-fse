@@ -32,7 +32,17 @@ $image = get_field('image');
 <div <?php echo $anchor; ?> class="<?php echo esc_attr( $class_name ); ?>">
 	<section class="works">
 		hello world
+
 		<?php
+		echo '<div class="block-about__content">';
+		echo '<InnerBlocks />';
+		echo '</div>';
+		echo '<div class="block-about__content">';
+		echo '<InnerBlocks />';
+		echo '</div>';
+		echo '<div class="block-about__content">';
+		echo '<InnerBlocks />';
+		echo '</div>';
 		if ( $image ) {
 			echo mosne_image( $image, 'large', 'figure', true );
 			echo mosne_image( $image, 'thumbnail', '', false );

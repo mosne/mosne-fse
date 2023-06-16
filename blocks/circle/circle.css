@@ -4,6 +4,8 @@
   width: 100px;
   height: 100px;
   border-radius: 100%;
+}
+.aligncenter .circle {
   margin: 0 auto;
 }
 

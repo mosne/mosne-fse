@@ -11,7 +11,7 @@
     "renderTemplate": "circle.php"
   },
   "supports": {
-    "align": false,
+    "align": true,
     "anchor": false,
     "alignContent": true,
     "spacing": {
@@ -23,7 +23,7 @@
       "background": true,
       "link": false
     },
-    "alignText": false,
+    "alignText": true,
     "fullHeight": false
   },
   "attributes": {

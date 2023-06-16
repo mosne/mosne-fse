@@ -38,10 +38,10 @@ function register_acf_blocks(): void {
 	// register block works
 	register_block_type( get_theme_file_path( 'blocks/works' ) );
 	mosne_register_block_script( 'works', '/blocks/works/works.js', [ 'jquery' ], $version, true );
-	mosne_register_block_styles( 'works', '/blocks/works/works.css', [ 'global-styles' ], $version, 'all' );
+	mosne_register_block_styles( 'works', '/blocks/works/works.css', [], $version, 'all' );
 	// register block works
 	register_block_type( get_theme_file_path( 'blocks/circle' ) );
-	mosne_register_block_styles( 'circle', '/blocks/circle/circle.css', [ 'global-styles' ], $version, 'all' );
+	mosne_register_block_styles( 'circle', '/blocks/circle/circle.css', [], $version, 'all' );
 }
 
 add_action( 'init', 'register_acf_blocks' );
