@@ -1,6 +1,6 @@
 {
     "key": "taxonomy_6489c2aea6a50",
-    "title": "Category",
+    "title": "Categories",
     "menu_order": 0,
     "active": true,
     "taxonomy": "work-category",
@@ -11,7 +11,7 @@
     "import_source": "",
     "import_date": "",
     "labels": {
-        "name": "Category",
+        "name": "Categories",
         "singular_name": "Category",
         "menu_name": "Category",
         "all_items": "All Category",
@@ -65,5 +65,5 @@
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1686749993
+    "modified": 1686985055
 }

@@ -1,20 +1,19 @@
 {
-  "name": "acf/works",
-  "title": "Works",
+  "name": "acf/custom-gallery",
+  "title": "Custom gallery",
   "description": "Works block.",
-  "style": "works",
-  "script": "works",
+  "style": "custom-gallery",
+  "script": "custom-gallery",
   "category": "formatting",
   "icon": "admin-comments",
-  "keywords": ["works", "portfolio"],
+  "keywords": ["images", "gallery"],
   "acf": {
     "mode": "preview",
-    "renderTemplate": "works.php"
+    "renderTemplate": "custom-gallery.php"
   },
   "supports": {
     "align": false,
-    "anchor": false,
-    "jsx" : true,
+    "anchor": true,
     "alignContent": true,
     "spacing": {
       "padding": true,

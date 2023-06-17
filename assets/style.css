@@ -1,3 +1,11 @@
+/**
+ * Strip units
+ */
+/**
+ * Em
+ *
+ * convert value from px to em
+ */
 .wp-block-navigation .wp-block-search .wp-block-search__label {
   display: none;
 }

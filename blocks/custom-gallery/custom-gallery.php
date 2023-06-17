@@ -34,15 +34,6 @@ $image = get_field('image');
 		hello world
 
 		<?php
-		echo '<div class="block-about__content">';
-		echo '<InnerBlocks />';
-		echo '</div>';
-		echo '<div class="block-about__content">';
-		echo '<InnerBlocks />';
-		echo '</div>';
-		echo '<div class="block-about__content">';
-		echo '<InnerBlocks />';
-		echo '</div>';
 		if ( $image ) {
 			echo mosne_image( $image, 'large', 'figure', true );
 			echo mosne_image( $image, 'thumbnail', '', false );

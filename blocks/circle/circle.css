@@ -1,11 +1,22 @@
-.circle {
+/**
+ * Strip units
+ */
+/**
+ * Em
+ *
+ * convert value from px to em
+ */
+.wp-block-circle {
+  --wp--preset--circle-size:100px;
+}
+.wp-block-circle .circle {
   display: block;
-  background: green;
-  width: 100px;
-  height: 100px;
+  background: var(--wp--preset--color--vivid-green-cyan);
+  width: var(--wp--preset--circle-size);
+  height: var(--wp--preset--circle-size);
   border-radius: 100%;
 }
-.aligncenter .circle {
+.aligncenter .wp-block-circle .circle {
   margin: 0 auto;
 }
 

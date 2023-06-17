@@ -36,9 +36,9 @@ function mosne_register_block_script( string $handle = '', string $path = '', ar
 function register_acf_blocks(): void {
 	$version = wp_get_theme()->get( 'Version' );
 	// register block works
-	register_block_type( get_theme_file_path( 'blocks/works' ) );
-	mosne_register_block_script( 'works', '/blocks/works/works.js', [ 'jquery' ], $version, true );
-	mosne_register_block_styles( 'works', '/blocks/works/works.css', [], $version, 'all' );
+	register_block_type( get_theme_file_path( 'blocks/selected-works' ) );
+	mosne_register_block_script( 'selected-works', '/blocks/selected-works/selected-works.js', [ 'jquery' ], $version, true );
+	mosne_register_block_styles( 'selected-works', '/blocks/selected-works/selected-works.css', [], $version, 'all' );
 	// register block works
 	register_block_type( get_theme_file_path( 'blocks/circle' ) );
 	mosne_register_block_styles( 'circle', '/blocks/circle/circle.css', [], $version, 'all' );

@@ -9,7 +9,7 @@
     "import_date": "",
     "labels": {
         "name": "Works",
-        "singular_name": "work",
+        "singular_name": "Work",
         "menu_name": "Works",
         "all_items": "All Works",
         "edit_item": "Edit work",
@@ -82,5 +82,5 @@
     "can_export": true,
     "delete_with_user": false,
     "register_meta_box_cb": "",
-    "modified": 1686750670
+    "modified": 1686985041
 }

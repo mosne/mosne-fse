@@ -1,0 +1,24 @@
+{
+  "name": "acf/selected-works",
+  "title": "Selected Works",
+  "description": "Works block.",
+  "style": "selected-works",
+  "script": "selected-works",
+  "category": "formatting",
+  "icon": "admin-site-alt3",
+  "keywords": ["works", "portfolio"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "selected-works.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "alignText": false,
+    "fullHeight": false
+  }
+}

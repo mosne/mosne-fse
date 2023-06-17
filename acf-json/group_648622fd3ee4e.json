@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_648c85d8632ed",
-            "label": "taxonomies order",
+            "label": "Taxonomies order",
             "name": "taxonomies_order",
             "aria-label": "",
-            "type": "taxonomy",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,14 +16,93 @@
                 "class": "",
                 "id": ""
             },
-            "taxonomy": "work-category",
-            "add_term": 0,
-            "save_terms": 0,
-            "load_terms": 0,
-            "return_format": "id",
-            "field_type": "checkbox",
-            "multiple": 0,
-            "allow_null": 0
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_648cae6e6dc31",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_648cae6e6dc31",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_648c85d8632ed"
+                },
+                {
+                    "key": "field_648cb5f12b672",
+                    "label": "Color class",
+                    "name": "color_class",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "has-primary-background-color": "Pink",
+                        "has-pale-pink-background-color": "Dark pink",
+                        "has-vivid-cyan-blue-background-color": "Blue",
+                        "has-luminous-vivid-amber-background-color": "Yellow",
+                        "has-vivid-purple-background-color": "Purple",
+                        "has-luminous-vivid-orange-background-color": "Orange",
+                        "has-vivid-green-cyan-background-color": "Green"
+                    },
+                    "default_value": "has-primary-background-color",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_648c85d8632ed"
+                },
+                {
+                    "key": "field_648cae946dc32",
+                    "label": "Selected works",
+                    "name": "selected_works",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "works"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "return_format": "id",
+                    "multiple": 1,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "parent_repeater": "field_648c85d8632ed"
+                }
+            ]
         }
     ],
     "location": [
@@ -31,18 +110,18 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/works"
+                "value": "acf\/selected-works"
             }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686930974
+    "modified": 1686985204
 }
