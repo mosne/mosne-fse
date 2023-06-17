@@ -4,7 +4,7 @@
 .wp-block-acf-selected-works {
 
   .selected-works {
-    --wp--preset--selected-work--width: 71px;
+    --wp--preset--selected-work--width: 31px;
     --wp--preset--selected-work--height: 52px;
     --wp--preset--selected-work-tooltip--size: 120px;
     --wp--preset--selected-work-tooltip--font-size: .65em;
@@ -76,8 +76,11 @@
     &__item{
       transition: opacity .35s ease;
       // border-left: 1px dashed rgba(0,0,0,.1);
+      background-size: 33px 53px;
+      background-repeat: repeat;
       @include hover(){
         opacity: .75;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='57' fill='none' viewBox='0 0 35 57'%3E%3Cpath fill='%231E1E1E' d='M0 29h17v28H0zM17 0h18v29H17z'/%3E%3C/svg%3E");
       }
       &:last-child{
         flex-grow: 1;
@@ -110,7 +113,7 @@
 
     // destop
     @include  breakpoints(medium){
-      --wp--preset--selected-work--width: 61px;
+      --wp--preset--selected-work--width: 31px;
       --wp--preset--selected-work--height: 130px;
       --wp--preset--selected-work-tooltip--size: 275px;
       --wp--preset--selected-work-tooltip--font-size: .85em;

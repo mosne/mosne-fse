@@ -1,0 +1,29 @@
+{
+  "name": "acf/button-url",
+  "title": "Button-url",
+  "description": "Button Url block.",
+  "style": "button-url",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["button", "url", "link"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "button-url.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": false,
+    "alignContent": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "text": false,
+      "background": true,
+      "link": false
+    },
+    "alignText": true,
+    "fullHeight": false
+  }
+}
