@@ -25,11 +25,5 @@
     },
     "alignText": true,
     "fullHeight": false
-  },
-  "attributes": {
-    "backgroundColor": {
-      "type": "string",
-      "default": "tertiary"
-    }
   }
 }

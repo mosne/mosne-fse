@@ -6,17 +6,17 @@
  *
  * convert value from px to em
  */
-.wp-block-circle {
+.wp-block-acf-circle {
   --wp--preset--circle-size:100px;
 }
-.wp-block-circle .circle {
+.wp-block-acf-circle .circle {
   display: block;
   background: var(--wp--preset--color--vivid-green-cyan);
   width: var(--wp--preset--circle-size);
   height: var(--wp--preset--circle-size);
   border-radius: 100%;
 }
-.aligncenter .wp-block-circle .circle {
+.aligncenter .wp-block-acf-circle .circle {
   margin: 0 auto;
 }
 

@@ -16,17 +16,8 @@ $anchor = '';
 if ( ! empty( $block['anchor'] ) ) {
 	$anchor = 'id="' . esc_attr( $block['anchor'] ) . '" ';
 }
-
-// Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'wp-block-selected-works';
-if ( ! empty( $block['className'] ) ) {
-	$class_name .= ' ' . $block['className'];
-}
-if ( ! empty( $block['align'] ) ) {
-	$class_name .= ' align' . $block['align'];
-}
 ?>
-<div <?php echo $anchor; ?> class="<?php echo esc_attr( $class_name ); ?>">
+<div <?php echo $anchor; ?> <?php echo get_block_wrapper_attributes(); ?>>
 	<section class="selected-works">
 		<?php if ( have_rows( 'taxonomies_order' ) ): ?>
 			<ul class="selected-works__row has-tertiary-background-color">

@@ -16,19 +16,10 @@ $anchor = '';
 if ( ! empty( $block['anchor'] ) ) {
 	$anchor = 'id="' . esc_attr( $block['anchor'] ) . '" ';
 }
-
-// Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'wp-block-circle';
-if ( ! empty( $block['className'] ) ) {
-	$class_name .= ' ' . $block['className'];
-}
-if ( ! empty( $block['alignText'] ) ) {
-	$class_name .= ' align' . $block['alignText'];
-}
 $color = get_field('color',get_the_id());
 $circle_style = "background-color: $color";
 
 ?>
-<div <?php echo $anchor; ?> class="<?php echo esc_attr( $class_name ); ?>">
+<div <?php echo $anchor; ?> <?php echo get_block_wrapper_attributes();?>>
 	<div class="circle" style="<?php echo esc_attr($circle_style);?>"></div>
 </div>

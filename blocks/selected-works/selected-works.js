@@ -3,15 +3,14 @@
     const $tooltip = $('.selected-works__tooltip');
     const $tooltipLabel = $('.selected-works__tooltip-label');
     const $selectedWorks = $('.selected-works');
-    const $sample = $('.selected-works__link').eq(0);
-
 
     $('.selected-works__link').on('mouseenter', function() {
-        const text = $(this).find('span').html();
-        const xy = $(this).offset();
+        const $this = $(this);
+        const text = $this.find('span').html();
+        const xy = $this.offset();
         const sizeTooltip = $tooltip.width() * 0.5;
-        const sizeLeft = sizeTooltip - $sample.width() * 0.5;
-        const sizeTop = sizeTooltip + $sample.height() * 0.5;
+        const sizeLeft = sizeTooltip - $this.width() * 0.5;
+        const sizeTop = sizeTooltip + $this.height() * 0.5;
         const refXy = $selectedWorks.offset();
         $tooltipLabel.html(text);
         $tooltip.css({

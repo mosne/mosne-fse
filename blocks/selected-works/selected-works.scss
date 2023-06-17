@@ -1,11 +1,11 @@
 @import '../../assets/scss/_config/variables';
 @import '../../assets/scss/_mixins/mixins';
 
-.wp-block-selected-works {
+.wp-block-acf-selected-works {
 
   .selected-works {
-    --wp--preset--selected-work--width: 10.8306%;
-    --wp--preset--selected-work--height: 90px;
+    --wp--preset--selected-work--width: 71px;
+    --wp--preset--selected-work--height: 52px;
     --wp--preset--selected-work-tooltip--size: 120px;
     --wp--preset--selected-work-tooltip--font-size: .65em;
     --wp--preset--selected-work-tooltip--background: var(--wp--preset--color--contrast);
@@ -57,7 +57,7 @@
       overflow: hidden;
 
       li {
-        flex: 0 1 var(--wp--preset--selected-work--width);
+        flex: 1 1 var(--wp--preset--selected-work--width);
         position: relative;
       }
     }
@@ -75,7 +75,7 @@
 
     &__item{
       transition: opacity .35s ease;
-      border-left: 1px dashed rgba(0,0,0,.1);
+      // border-left: 1px dashed rgba(0,0,0,.1);
       @include hover(){
         opacity: .75;
       }
@@ -110,8 +110,8 @@
 
     // destop
     @include  breakpoints(medium){
-      --wp--preset--selected-work--width: 5.804%;
-      --wp--preset--selected-work--height: 152px;
+      --wp--preset--selected-work--width: 61px;
+      --wp--preset--selected-work--height: 130px;
       --wp--preset--selected-work-tooltip--size: 275px;
       --wp--preset--selected-work-tooltip--font-size: .85em;
     }

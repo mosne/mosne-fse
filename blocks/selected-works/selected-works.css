@@ -6,19 +6,19 @@
  *
  * convert value from px to em
  */
-.wp-block-selected-works .selected-works {
-  --wp--preset--selected-work--width: 10.8306%;
-  --wp--preset--selected-work--height: 90px;
+.wp-block-acf-selected-works .selected-works {
+  --wp--preset--selected-work--width: 71px;
+  --wp--preset--selected-work--height: 52px;
   --wp--preset--selected-work-tooltip--size: 120px;
   --wp--preset--selected-work-tooltip--font-size: .65em;
   --wp--preset--selected-work-tooltip--background: var(--wp--preset--color--contrast);
   --wp--preset--selected-work-tooltip--color: var(--wp--preset--color--base);
   position: relative;
 }
-.wp-block-selected-works .selected-works:hover .selected-works__tooltip, .wp-block-selected-works .selected-works:active .selected-works__tooltip, .wp-block-selected-works .selected-works:focus .selected-works__tooltip {
+.wp-block-acf-selected-works .selected-works:hover .selected-works__tooltip, .wp-block-acf-selected-works .selected-works:active .selected-works__tooltip, .wp-block-acf-selected-works .selected-works:focus .selected-works__tooltip {
   opacity: 1;
 }
-.wp-block-selected-works .selected-works__tooltip {
+.wp-block-acf-selected-works .selected-works__tooltip {
   position: absolute;
   z-index: 10;
   left: 0;
@@ -34,7 +34,7 @@
   justify-content: center;
   pointer-events: none;
 }
-.wp-block-selected-works .selected-works__tooltip-label {
+.wp-block-acf-selected-works .selected-works__tooltip-label {
   text-align: center;
   font-size: var(--wp--preset--selected-work-tooltip--font-size);
   color: var(--wp--preset--selected-work-tooltip--color);
@@ -45,7 +45,7 @@
   max-height: 2em;
   padding: 1em;
 }
-.wp-block-selected-works .selected-works__row {
+.wp-block-acf-selected-works .selected-works__row {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -56,40 +56,39 @@
   border-radius: 3em;
   overflow: hidden;
 }
-.wp-block-selected-works .selected-works__row li {
-  flex: 0 1 var(--wp--preset--selected-work--width);
+.wp-block-acf-selected-works .selected-works__row li {
+  flex: 1 1 var(--wp--preset--selected-work--width);
   position: relative;
 }
-.wp-block-selected-works .selected-works__hover {
+.wp-block-acf-selected-works .selected-works__hover {
   position: absolute;
   display: none;
 }
-.wp-block-selected-works .selected-works__link {
+.wp-block-acf-selected-works .selected-works__link {
   display: block;
   width: 100%;
   height: var(--wp--preset--selected-work--height);
 }
-.wp-block-selected-works .selected-works__item {
+.wp-block-acf-selected-works .selected-works__item {
   transition: opacity 0.35s ease;
-  border-left: 1px dashed rgba(0, 0, 0, 0.1);
 }
-.wp-block-selected-works .selected-works__item:hover, .wp-block-selected-works .selected-works__item:active, .wp-block-selected-works .selected-works__item:focus {
+.wp-block-acf-selected-works .selected-works__item:hover, .wp-block-acf-selected-works .selected-works__item:active, .wp-block-acf-selected-works .selected-works__item:focus {
   opacity: 0.75;
 }
-.wp-block-selected-works .selected-works__item:last-child {
+.wp-block-acf-selected-works .selected-works__item:last-child {
   flex-grow: 1;
   flex-shrink: 1;
 }
-.wp-block-selected-works .selected-works__tax {
+.wp-block-acf-selected-works .selected-works__tax {
   display: block;
   height: var(--wp--preset--selected-work--height);
   pointer-events: none;
 }
-.wp-block-selected-works .selected-works__tax:first-child {
+.wp-block-acf-selected-works .selected-works__tax:first-child {
   flex: none;
   width: 0;
 }
-.wp-block-selected-works .selected-works__tax-label {
+.wp-block-acf-selected-works .selected-works__tax-label {
   margin: 0;
   position: absolute;
   left: calc(100% + 35px);
@@ -102,9 +101,9 @@
   white-space: nowrap;
 }
 @media screen and (min-width: 48.875em) {
-  .wp-block-selected-works .selected-works {
-    --wp--preset--selected-work--width: 5.804%;
-    --wp--preset--selected-work--height: 152px;
+  .wp-block-acf-selected-works .selected-works {
+    --wp--preset--selected-work--width: 61px;
+    --wp--preset--selected-work--height: 130px;
     --wp--preset--selected-work-tooltip--size: 275px;
     --wp--preset--selected-work-tooltip--font-size: .85em;
   }
