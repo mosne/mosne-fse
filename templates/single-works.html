@@ -1,19 +1,37 @@
-<!-- wp:template-part {"slug":"header","theme":"mosne-fse","tagName":"header"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50)"><!-- wp:post-title {"textAlign":"left","level":1,"align":"wide","style":{"spacing":{"margin":{"bottom":"0"}}},"fontSize":"x-large"} /-->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group alignwide"><!-- wp:acf/circle {"name":"acf/circle","mode":"preview","alignText":"left","alignContent":"center"} /-->
 
-    <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-    <div class="wp-block-group alignwide"><!-- wp:post-date {"format":"Y","textColor":"primary"} /--></div>
-    <!-- /wp:group -->
+<!-- wp:post-title {"textAlign":"left","level":1,"align":"wide","style":{"spacing":{"margin":{"bottom":"0"}}},"fontSize":"x-large"} /-->
 
-    <!-- wp:post-featured-image {"height":"500px","align":"wide"} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:post-date {"format":"Y","style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary"} /-->
 
-    <!-- wp:post-content {"layout":{"type":"default"}} /-->
-
-    <!-- wp:spacer -->
-    <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer --></main>
+<!-- wp:post-terms {"term":"work-category","style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary"} /--></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","theme":"mosne-fse","tagName":"footer"} /-->
+<!-- wp:post-featured-image {"height":"500px","align":"wide","style":{"border":{"radius":"54px"}}} /-->
+
+<!-- wp:post-content {"layout":{"type":"default"}} /-->
+
+<!-- wp:acf/button-url {"name":"acf/button-url","mode":"preview","alignText":"left","alignContent":"top"} /-->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","linkLabel":true,"arrow":"arrow"} /-->
+
+<!-- wp:post-navigation-link {"linkLabel":true,"arrow":"arrow","fontSize":"medium"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":"33px"} -->
+<div style="height:33px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

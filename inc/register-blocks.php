@@ -40,12 +40,15 @@ function register_acf_blocks(): void {
 	mosne_register_block_script( 'hover-intent', '/blocks/selected-works/plugin-hover-intent.js', [ 'jquery' ], $version, true );
 	mosne_register_block_script( 'selected-works', '/blocks/selected-works/selected-works.js', [ 'jquery','hover-intent' ], $version, true );
 	mosne_register_block_styles( 'selected-works', '/blocks/selected-works/selected-works.css', [], $version, 'all' );
-	// register block works
+	// register block circle
 	register_block_type( get_theme_file_path( 'blocks/circle' ) );
 	mosne_register_block_styles( 'circle', '/blocks/circle/circle.css', [], $version, 'all' );
-	// register block works
+	// register block button-url
 	register_block_type( get_theme_file_path( 'blocks/button-url' ) );
 	mosne_register_block_styles( 'button-url', '/blocks/button-url/button-url.css', [], $version, 'all' );
+	// register block archive-works
+	register_block_type( get_theme_file_path( 'blocks/archive-works' ) );
+	mosne_register_block_styles( 'archive-works', '/blocks/archive-works/archive-works.css', [], $version, 'all' );
 }
 
 add_action( 'init', 'register_acf_blocks' );

@@ -1,0 +1,24 @@
+{
+  "name": "acf/archive-works",
+  "title": "Archive Works",
+  "description": "Archive block.",
+  "style": "archive-works",
+  "script": "archive-works",
+  "category": "formatting",
+  "icon": "admin-site-alt3",
+  "keywords": ["works", "archive"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "archive-works.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "alignText": false,
+    "fullHeight": false
+  }
+}

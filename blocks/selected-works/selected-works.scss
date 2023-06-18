@@ -4,20 +4,20 @@
 .wp-block-acf-selected-works {
 
   .selected-works {
-    --wp--preset--selected-work--width: 31px;
+    --wp--preset--selected-work--width: 30px;
     --wp--preset--selected-work--height: 52px;
     --wp--preset--selected-work-tooltip--size: 120px;
     --wp--preset--selected-work-tooltip--font-size: .65em;
     --wp--preset--selected-work-tooltip--background: var(--wp--preset--color--contrast);
     --wp--preset--selected-work-tooltip--color: var(--wp--preset--color--base);
     position: relative;
-    @include hover(){
-      .selected-works__tooltip{
+    @include hover() {
+      .selected-works__tooltip {
         opacity: 1;
       }
     }
 
-    &__tooltip{
+    &__tooltip {
       position: absolute;
       z-index: 10;
       left: 0;
@@ -32,7 +32,8 @@
       align-items: center;
       justify-content: center;
       pointer-events: none;
-      &-label{
+
+      &-label {
         text-align: center;
         font-size: var(--wp--preset--selected-work-tooltip--font-size);
         color: var(--wp--preset--selected-work-tooltip--color);
@@ -73,16 +74,19 @@
       height: var(--wp--preset--selected-work--height);
     }
 
-    &__item{
+    &__item {
       transition: opacity .35s ease;
       // border-left: 1px dashed rgba(0,0,0,.1);
-      background-size: 33px 53px;
+      background-size: 15px 24px;
       background-repeat: repeat;
-      @include hover(){
+
+      &:hover,
+      &:focus-within {
         opacity: .75;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='57' fill='none' viewBox='0 0 35 57'%3E%3Cpath fill='%231E1E1E' d='M0 29h17v28H0zM17 0h18v29H17z'/%3E%3C/svg%3E");
       }
-      &:last-child{
+
+      &:last-child {
         flex-grow: 1;
         flex-shrink: 1;
       }
@@ -92,6 +96,7 @@
       display: block;
       height: var(--wp--preset--selected-work--height);
       pointer-events: none;
+
       &:first-child {
         flex: none;
         width: 0;
@@ -112,8 +117,8 @@
     }
 
     // destop
-    @include  breakpoints(medium){
-      --wp--preset--selected-work--width: 31px;
+    @include breakpoints(medium) {
+      --wp--preset--selected-work--width: 36px;
       --wp--preset--selected-work--height: 130px;
       --wp--preset--selected-work-tooltip--size: 275px;
       --wp--preset--selected-work-tooltip--font-size: .85em;

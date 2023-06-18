@@ -69,7 +69,7 @@
     "taxonomies": [
         "work-category"
     ],
-    "has_archive": false,
+    "has_archive": true,
     "has_archive_slug": "",
     "rewrite": {
         "permalink_rewrite": "post_type_key",
@@ -82,5 +82,5 @@
     "can_export": true,
     "delete_with_user": false,
     "register_meta_box_cb": "",
-    "modified": 1686985041
+    "modified": 1687040830
 }
