@@ -16,8 +16,12 @@
   height: var(--wp--preset--circle-size);
   border-radius: 100%;
 }
-.aligncenter .wp-block-acf-circle .circle {
+.wp-block-acf-circle.has-text-align-center .circle {
   margin: 0 auto;
+}
+.wp-block-acf-circle.has-text-align-right .circle {
+  margin: 0 auto;
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=circle.css.map */

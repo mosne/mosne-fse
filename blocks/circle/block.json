@@ -5,15 +5,22 @@
   "style": "circle",
   "category": "formatting",
   "icon": "admin-comments",
-  "keywords": ["circle", "svg", "shape", "round", "roundel", "circle"],
+  "keywords": [
+    "circle",
+    "svg",
+    "shape",
+    "round",
+    "roundel",
+    "circle"
+  ],
   "acf": {
     "mode": "preview",
     "renderTemplate": "circle.php"
   },
   "supports": {
     "align": true,
+    "alignText": true,
     "anchor": false,
-    "alignContent": true,
     "spacing": {
       "padding": true,
       "margin": true
@@ -22,8 +29,12 @@
       "text": false,
       "background": true,
       "link": false
-    },
-    "alignText": true,
-    "fullHeight": false
+    }
+  },
+  "attributes": {
+    "alignText": {
+      "type": "string",
+      "default": "center"
+    }
   }
 }

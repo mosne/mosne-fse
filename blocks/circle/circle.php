@@ -16,10 +16,14 @@ $anchor = '';
 if ( ! empty( $block['anchor'] ) ) {
 	$anchor = 'id="' . esc_attr( $block['anchor'] ) . '" ';
 }
-$color = get_field('color',get_the_id());
-$circle_style = "background-color: $color";
-
+$color        = get_field( 'color', get_the_id() );
+$circle_style = ( ! empty( $color ) ) ? "background-color: $color" : '';
+// Block text alignment
+if( !empty($block['alignText']) ) {
+	$className = 'has-text-align-' . $block['alignText'];
+}
+$extra_attrs['class'] = $className ?? '';
 ?>
-<div <?php echo $anchor; ?> <?php echo get_block_wrapper_attributes();?>>
-	<div class="circle" style="<?php echo esc_attr($circle_style);?>"></div>
+<div <?php echo $anchor; ?> <?php echo get_block_wrapper_attributes($extra_attrs); ?>>
+	<div class="circle" style="<?php echo esc_attr( $circle_style ); ?>"></div>
 </div>
