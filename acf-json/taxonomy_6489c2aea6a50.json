@@ -7,13 +7,13 @@
     "object_type": [
         "works"
     ],
-    "advanced_configuration": 0,
+    "advanced_configuration": 1,
     "import_source": "",
     "import_date": "",
     "labels": {
         "name": "Categories",
         "singular_name": "Category",
-        "menu_name": "Category",
+        "menu_name": "Works Categories",
         "all_items": "All Category",
         "edit_item": "Edit Category",
         "view_item": "View Category",
@@ -65,5 +65,5 @@
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1686985055
+    "modified": 1687101547
 }
