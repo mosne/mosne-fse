@@ -1,6 +1,6 @@
 {
     "key": "taxonomy_6489c2aea6a50",
-    "title": "Categories",
+    "title": "Works Categories",
     "menu_order": 0,
     "active": true,
     "taxonomy": "work-category",
@@ -11,8 +11,8 @@
     "import_source": "",
     "import_date": "",
     "labels": {
-        "name": "Categories",
-        "singular_name": "Category",
+        "name": "Works Categories",
+        "singular_name": "Work Category",
         "menu_name": "Works Categories",
         "all_items": "All Category",
         "edit_item": "Edit Category",
@@ -65,5 +65,5 @@
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1687101547
+    "modified": 1687160638
 }
