@@ -2,7 +2,7 @@
 @import '../../assets/scss/_mixins/mixins';
 
 .wp-block-acf-circle {
-  --wp--preset--circle-size:100px;
+  --wp--preset--circle-size:70px;
 
   .circle {
     display: block;
@@ -17,5 +17,8 @@
   &.has-text-align-right .circle {
     margin: 0 auto;
     margin-right: 0;
+  }
+  @include breakpoints(medium){
+    --wp--preset--circle-size:100px;
   }
 }

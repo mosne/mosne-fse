@@ -1,0 +1,20 @@
+.wp-block-post-terms{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25em;
+  &__separator{
+    display: none;
+  }
+  a{
+    display: inline-block;
+    background: var(--wp--preset--color--tertiary) ;
+    border-radius: 20px;
+    padding: 0 1em;
+    margin-right: .5em;
+    text-decoration: none;
+    @include  hover{
+        background: var(--wp--preset--color--contrast);
+        color: var(--wp--preset--color--base);
+    }
+  }
+}

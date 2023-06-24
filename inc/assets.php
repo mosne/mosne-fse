@@ -27,10 +27,10 @@ add_action( 'wp_enqueue_scripts', 'mosne_fse_enqueue_assets' );
  * @return void
  */
 function mosne_fse_editor_assets(): void {
-	$style_path   = apply_filters( 'mosne_is_min', "./assets/style.css" );
+	$style_path   = apply_filters( 'mosne_is_min', "assets/style.css" );
 	add_editor_style( $style_path );
 }
 
 
-add_action( 'ini', 'mosne_fse_editor_assets' );
+add_action( 'admin_init', 'mosne_fse_editor_assets' );
 

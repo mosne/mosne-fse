@@ -1,0 +1,17 @@
+.wp-block-getwid-content-timeline-item{
+  $el : &;
+  &__card{
+    background: var(--wp--preset--color--tertiary);
+    color: var(--wp--preset--color--secondary);
+  }
+  &.is-active{
+    #{$el}__card{
+    background: var(--wp--preset--color--secondary);
+    color: var(--wp--preset--color--base);
+    }
+  }
+  &__meta-content{
+    font-size: var(--wp--preset--font-size--x-large);
+    font-weight: 700;
+  }
+}
