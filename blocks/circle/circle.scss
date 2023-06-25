@@ -3,17 +3,21 @@
 
 .wp-block-acf-circle {
   --wp--preset--circle-size:70px;
+  color: var(--wp--preset--color--vivid-green-cyan);
 
   .circle {
+    color: currentColor;
     display: block;
-    background: var(--wp--preset--color--vivid-green-cyan);
+    background: currentColor;
     width: var(--wp--preset--circle-size);
     height: var(--wp--preset--circle-size);
     border-radius: 100%;
   }
+  .has-text-align-center .circle,
   &.has-text-align-center .circle {
     margin: 0 auto;
   }
+  .has-text-align-right .circle,
   &.has-text-align-right .circle {
     margin: 0 auto;
     margin-right: 0;

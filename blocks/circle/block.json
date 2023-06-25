@@ -26,8 +26,8 @@
       "margin": true
     },
     "color": {
-      "text": false,
-      "background": true,
+      "text": true,
+      "background": false,
       "link": false
     }
   },
