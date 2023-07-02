@@ -49,6 +49,10 @@ function register_acf_blocks(): void {
 	// register block archive-works
 	register_block_type( get_theme_file_path( 'blocks/archive-works' ) );
 	mosne_register_block_styles( 'archive-works', '/blocks/archive-works/archive-works.css', [], $version, 'all' );
+    // register block custom gallery
+    register_block_type( get_theme_file_path( 'blocks/custom-gallery' ) );
+    mosne_register_block_script( 'custom-gallery', '/blocks/custom-gallery/custom-gallery.js', [], $version, true );
+    mosne_register_block_styles( 'custom-gallery', '/blocks/custom-gallery/custom-gallery.css', [], $version, 'all' );
 }
 
 add_action( 'init', 'register_acf_blocks' );

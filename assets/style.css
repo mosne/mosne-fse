@@ -162,4 +162,8 @@
   font-weight: 700;
 }
 
+.wp-block-post-title {
+  word-break: initial;
+}
+
 /*# sourceMappingURL=style.css.map */

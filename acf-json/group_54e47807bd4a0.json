@@ -120,10 +120,10 @@
                 "class": "",
                 "id": ""
             },
+            "return_format": "id",
+            "library": "all",
             "min": "",
             "max": "",
-            "preview_size": "thumbnail",
-            "library": "all",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -131,8 +131,8 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "return_format": "array",
-            "insert": "append"
+            "insert": "append",
+            "preview_size": "thumbnail"
         },
         {
             "key": "field_53aec77c2eefd",
@@ -148,19 +148,19 @@
                 "class": "",
                 "id": ""
             },
+            "return_format": "id",
+            "library": "all",
             "min": "",
             "max": "",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "return_format": "array",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
             "insert": "append",
-            "min_width": 0,
-            "min_height": 0,
-            "min_size": 0,
-            "max_width": 0,
-            "max_height": 0,
-            "max_size": 0,
-            "mime_types": ""
+            "preview_size": "thumbnail"
         },
         {
             "key": "field_53aed861cafdd",
@@ -200,5 +200,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686749821
+    "modified": 1688313584
 }

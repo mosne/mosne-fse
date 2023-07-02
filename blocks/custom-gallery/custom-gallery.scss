@@ -1,6 +1,170 @@
 @import '../../assets/scss/_config/variables';
 @import '../../assets/scss/_mixins/mixins';
-.toto{
-  background: red;
+
+.m-carousel {
+  $el: &;
+  $size: var(--carousel--size);
+  $scroll-track: var(--carousel--track--color);
+  $scroll-bkg: var(--carousel--backround--color);
+  $scroll-bkg: var(--carousel--backround--color);
+  --carousel--size: 85%;
+
+  width: 100%;
+
+  .wp-block-image{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    picture{
+      margin-bottom: 0;
+      display: block;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 1920/1080;
+      border-radius: 10px;
+    }
+  }
+
+  &__rel {
+    position: relative;
+  }
+
+  &__scrollbar {
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: $scroll-track $scroll-bkg;
+    }
+
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: $scroll-bkg;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: $scroll-track;
+    }
+
+    #{$el}__wrapper {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__noscrollbar {
+    * {
+      scrollbar-width: none;
+    }
+
+    *::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+  }
+  &__slide {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  //  background: #000;
+    transition: all 0.35s ease;
+    flex: 0 0 $size;
+    max-width: $size;
+    aspect-ratio: 1920/1080;
+    scroll-snap-align: center; // or start | center | end
+
+
+    &-current {
+      background: red;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+
+  &__nav {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    @media (min-width: 992px) {
+      position: absolute;
+      top: 50%;
+    }
+  }
+
+  &__next {
+    position: absolute;
+    right: 0;
+    @media (min-width: 992px) {
+      transform: translate3d(150%, -100%, 0);
+    }
+  }
+  &__prev {
+    position: absolute;
+    left: 0;
+    @media (min-width: 992px) {
+      transform: translate3d(-150%, -100%, 0);
+    }
+  }
+
+  &__hide {
+    display: none;
+  }
+  &__dots {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  &__dot {
+    color: white;
+    background: #ddd;
+    border: 0;
+    padding: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin: 3px;
+    border-radius: 100%;
+    transition: all 0.35s ease;
+    &-active,
+    &:hover {
+      background: var(--carousel--theme--color,black);
+    }
+    .sr-only{
+      @include sr-only(true);
+    }
+  }
+  &__button {
+    color: var(--wp--preset--color--contrast);
+    background: var(--wp--preset--color--base);
+    border: 0;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    &:hover {
+      background: var(--wp--preset--color--contrast);
+      color: var(--wp--preset--color--base);
+    }
+  }
 }
+
 

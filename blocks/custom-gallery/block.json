@@ -22,7 +22,7 @@
     "color": {
       "text": false,
       "background": true,
-      "link": false
+      "link": true
     },
     "alignText": false,
     "fullHeight": false
