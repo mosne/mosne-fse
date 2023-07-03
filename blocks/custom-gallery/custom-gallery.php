@@ -33,6 +33,9 @@ $extra_attrs['class'] = $className ?? '';
 $extra_attrs['style'] = $theme_color ?? '';
 ?>
 <div <?php echo $anchor; ?> <?php echo get_block_wrapper_attributes($extra_attrs); ?>>
+    <?php if ($is_preview) : ?>
+       Gallery
+    <?php endif; ?>
     <?php if ($images) : ?>
         <section class="m-carousel">
             <div class="m-carousel__rel m-carousel__noscrollbar">

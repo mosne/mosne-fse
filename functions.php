@@ -2,6 +2,9 @@
 /**
  * Theme functions and definitions
  */
+
+//define( 'MOSNE_DEBUG', true );
+
 require_once __DIR__ . '/inc/debug.php';
 require_once __DIR__ . '/inc/assets.php';
 require_once __DIR__ . '/inc/register-blocks.php';

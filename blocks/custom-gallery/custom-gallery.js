@@ -20,7 +20,7 @@ class mosneCarousel {
         this.scrollArg = {
             behavior: "smooth",
             block: "center",
-            inline: "center"
+            inline: "left",
         };
         this.init();
     }
