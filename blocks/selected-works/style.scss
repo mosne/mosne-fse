@@ -95,7 +95,6 @@
     &__tax {
       display: block;
       height: var(--wp--preset--selected-work--height);
-      pointer-events: none;
 
       &:first-child {
         flex: none;
@@ -114,6 +113,11 @@
       font-weight: bold;
       color: var(--wp--preset--color--base);
       white-space: nowrap;
+      a {
+        color: var(--wp--preset--color--base);
+        text-decoration: none;
+        padding: 16px 35px 16px 0;
+      }
     }
 
     // destop
@@ -122,6 +126,23 @@
       --wp--preset--selected-work--height: 130px;
       --wp--preset--selected-work-tooltip--size: 275px;
       --wp--preset--selected-work-tooltip--font-size: .85em;
+      &__tax {
+        pointer-events: none;
+      }
+    }
+
+    // only mobile
+    @include breakpoints(medium,max) {
+      &__item {
+        pointer-events: none;
+       
+        &-nope {
+          display: none;
+        }
+      }
+      &__tooltip {
+        display: none;
+      }
     }
   }
 }

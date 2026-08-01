@@ -16,6 +16,7 @@ $anchor = '';
 if ( ! empty( $block['anchor'] ) ) {
 	$anchor = 'id="' . esc_attr( $block['anchor'] ) . '" ';
 }
+$max_items = 5;
 ?>
 <div <?php echo $anchor; ?> <?php echo get_block_wrapper_attributes(); ?>>
 	<section class="selected-works">
@@ -24,6 +25,7 @@ if ( ! empty( $block['anchor'] ) ) {
 				<?php while ( have_rows( 'taxonomies_order' ) ): the_row();
 					$selected_works = get_sub_field( 'selected_works' );
 					$color_class    = get_sub_field( 'color_class' );
+					$counter        = 0;
 					?>
 					<li class="selected-works__tax">
 						<p class="selected-works__tax-label">
@@ -33,13 +35,16 @@ if ( ! empty( $block['anchor'] ) ) {
 						</p>
 					</li>
 					<?php foreach ( $selected_works as $selected_work ) : ?>
-						<li class="selected-works__item <?php echo esc_attr( $color_class ); ?>">
+						<?php $visibility_class = $counter >= $max_items ? ' selected-works__item-nope' : ''; ?>
+						<li class="selected-works__item <?php echo esc_attr( $color_class ); echo esc_attr( $visibility_class); ?>">
 							<a href="<?php echo esc_url( get_permalink( $selected_work) ); ?>"
 							   class="selected-works__link" aria-label="<?php echo esc_html( get_the_title($selected_work) ); ?>">
 								<span class="selected-works__hover"><?php echo esc_html( get_the_title($selected_work) ); ?></span>
 							</a>
 						</li>
-					<?php endforeach;
+					<?php $counter++; endforeach;
+					// reset counter
+					$counter = 0;
 				endwhile; ?>
 			</ul>
 		<?php endif; ?>
