@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "mosne/copyright",
+  "title": "Copyright",
+  "description": "Displays a copyright line with the current year and custom text.",
+  "category": "widgets",
+  "icon": "privacy",
+  "keywords": ["copyright", "year", "legal", "footer"],
+  "textdomain": "mosne",
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": "All rights reserved"
+    }
+  },
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "fontFamily": true
+    },
+    "color": {
+      "text": true,
+      "background": true,
+      "link": false
+    }
+  },
+  "editorScript": "file:../../dist/blocks/copyright/index.js",
+  "style": "file:../../dist/blocks/copyright/style-index.css",
+  "render": "file:./render.php"
+}

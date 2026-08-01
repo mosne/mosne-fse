@@ -38,6 +38,10 @@ module.exports = {
 			process.cwd(),
 			'blocks/archive-works/index.js'
 		),
+		'blocks/copyright/index': path.resolve(
+			process.cwd(),
+			'blocks/copyright/index.js'
+		),
 	},
 	output: {
 		...defaultConfig.output,

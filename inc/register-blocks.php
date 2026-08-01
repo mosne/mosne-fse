@@ -1,12 +1,12 @@
 <?php
 /**
- * Register ACF blocks from block.json metadata.
+ * Register theme blocks from block.json metadata.
  *
  * Styles and scripts are declared in each block.json via file: paths.
  *
  * @return void
  */
-function register_acf_blocks(): void {
+function mosne_register_blocks(): void {
 	$blocks_dir = get_theme_file_path( 'blocks' );
 	$block_dirs = glob( $blocks_dir . '/*', GLOB_ONLYDIR );
 
@@ -21,4 +21,4 @@ function register_acf_blocks(): void {
 	}
 }
 
-add_action( 'init', 'register_acf_blocks' );
+add_action( 'init', 'mosne_register_blocks' );
