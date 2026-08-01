@@ -2,7 +2,7 @@
   "name": "acf/button-url",
   "title": "Button-url",
   "description": "Button Url block.",
-  "style": "button-url",
+  "style": "file:../../dist/blocks/button-url/style-index.css",
   "category": "formatting",
   "icon": "admin-comments",
   "keywords": ["button", "url", "link"],

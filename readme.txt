@@ -1,6 +1,6 @@
 == mosne ==
 
-Contributors: 
+Contributors: mosne
 Requires at least: 7.0
 Tested up to: 7.0
 Requires PHP: 5.7
