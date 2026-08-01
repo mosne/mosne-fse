@@ -1,8 +1,12 @@
+@use '../_config/variables' as *;
+@use '../_mixins/mixins' as *;
+
+
 .wp-block-query {
   &.is-style-stagger {
     .wp-block-post-template {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(6, 1fr) !important;
       gap: 32px;
     }
 
@@ -19,8 +23,7 @@
       }
     }
   }
-
-  @media only screen and (max-width: 1023px) {
+@include breakpoints(xlarge,max){
     &.is-style-stagger {
       .wp-block-post {
         &:nth-child(5n + 4) {
@@ -30,13 +33,15 @@
     }
   }
 
-  @media only screen and (min-width: 1024px) {
+  
+ @include breakpoints(xlarge){
     &.is-style-stagger {
       .wp-block-post-template {
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(10, 1fr) !important;
       }
 
       .wp-block-post {
+        grid-column: span 2;
         &:nth-child(9n + 6) {
           grid-column: 2 / span 2;
         }
