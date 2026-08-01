@@ -240,7 +240,7 @@
 				{
 					"fluid": {
 						"max": "1.8rem",
-						"min": "1.4rem"
+						"min": "1.25rem"
 					},
 					"name": "Large",
 					"size": "1.999rem",
@@ -249,7 +249,7 @@
 				{
 					"fluid": {
 						"max": "2.8rem",
-						"min": "1.7rem"
+						"min": "1.65rem"
 					},
 					"name": "Extra Large",
 					"size": "2.827rem",

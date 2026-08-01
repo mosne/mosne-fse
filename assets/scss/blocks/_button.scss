@@ -1,9 +1,18 @@
+@use '../_config/variables' as *;
+@use '../_mixins/mixins' as *;
+
 .wp-block-button {
   &.is-style-big {
     .wp-block-button__link {
       padding-top: min(3rem, 6vw) !important;
       padding-bottom: min(3rem, 6vw) !important;
       margin: 5px 0;
+      font-weight: 400 !important;
+      font-size: var(--wp--preset--font-size--large) !important;
+      @include hover() {
+        background-color: var(--wp--preset--color--contrast) !important;
+        color: var(--wp--preset--color--base) !important;
+      }
     }
   }
 }
