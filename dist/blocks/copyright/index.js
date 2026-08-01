@@ -1,1 +1,223 @@
-(()=>{"use strict";var e={50(){const e=window.wp.blocks,t=JSON.parse('{"UU":"mosne/copyright"}'),o=window.wp.blockEditor,s=window.wp.i18n,n=window.ReactJSXRuntime;(0,e.registerBlockType)(t.UU,{edit:function({attributes:e,setAttributes:t}){const{text:r}=e,i=(new Date).getFullYear(),c=(0,o.useBlockProps)({className:"mosne-copyright"});return(0,n.jsxs)("p",{...c,children:[(0,n.jsxs)("span",{className:"mosne-copyright__prefix",children:["© ",i," "]}),(0,n.jsx)(o.RichText,{tagName:"span",className:"mosne-copyright__text",value:r,onChange:e=>t({text:e}),placeholder:(0,s.__)("Add copyright text…","mosne"),allowedFormats:[]})]})},save:()=>null})}};const t={};function o(s){const n=t[s];if(void 0!==n)return n.exports;const r=t[s]={exports:{}};return e[s](r,r.exports,o),r.exports}o.m=e,(()=>{const e=[];o.O=(t,s,n,r)=>{if(s){r=r||0;for(var i=e.length;i>0&&e[i-1][2]>r;i--)e[i]=e[i-1];return void(e[i]=[s,n,r])}let c=1/0;for(i=0;i<e.length;i++){let[s,n,r]=e[i],a=!0;for(var l=0;l<s.length;l++)(!1&r||c>=r)&&Object.keys(o.O).every(e=>o.O[e](s[l]))?s.splice(l--,1):(a=!1,r<c&&(c=r));if(a){e.splice(i--,1);const o=n();void 0!==o&&(t=o)}}return t}})(),o.o=(e,t)=>Object.hasOwn(e,t),(()=>{const e={258:0,942:0};o.O.j=t=>0===e[t];const t=(t,s)=>{let[n,r,i]=s;var c,l,a=0;if(n.some(t=>0!==e[t])){for(c in r)o.o(r,c)&&(o.m[c]=r[c]);if(i)var p=i(o)}for(t&&t(s);a<n.length;a++)l=n[a],o.o(e,l)&&e[l]&&e[l][0](),e[l]=0;return o.O(p)},s=globalThis.webpackChunkmosne_fse||=[];s.forEach(t.bind(null,0)),s.push=t.bind(null,s.push.bind(s))})();let s=o.O(void 0,[942],()=>o(50));s=o.O(s)})();
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./blocks/copyright/edit.js"
+/*!**********************************!*\
+  !*** ./blocks/copyright/edit.js ***!
+  \**********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Edit)
+/* harmony export */ });
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+/**
+ * @param {Object}   props
+ * @param {Object}   props.attributes
+ * @param {Function} props.setAttributes
+ * @return {JSX.Element}
+ */
+
+function Edit({
+  attributes,
+  setAttributes
+}) {
+  const {
+    text
+  } = attributes;
+  const year = new Date().getFullYear();
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)({
+    className: 'mosne-copyright'
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+    ...blockProps,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
+      className: "mosne-copyright__prefix",
+      children: ["\xA9 ", year, ' ']
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
+      tagName: "span",
+      className: "mosne-copyright__text",
+      value: text,
+      onChange: value => setAttributes({
+        text: value
+      }),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add copyright text…', 'mosne'),
+      allowedFormats: []
+    })]
+  });
+}
+
+/***/ },
+
+/***/ "react/jsx-runtime"
+/*!**********************************!*\
+  !*** external "ReactJSXRuntime" ***!
+  \**********************************/
+(module) {
+
+module.exports = window["ReactJSXRuntime"];
+
+/***/ },
+
+/***/ "@wordpress/block-editor"
+/*!*************************************!*\
+  !*** external ["wp","blockEditor"] ***!
+  \*************************************/
+(module) {
+
+module.exports = window["wp"]["blockEditor"];
+
+/***/ },
+
+/***/ "@wordpress/blocks"
+/*!********************************!*\
+  !*** external ["wp","blocks"] ***!
+  \********************************/
+(module) {
+
+module.exports = window["wp"]["blocks"];
+
+/***/ },
+
+/***/ "@wordpress/i18n"
+/*!******************************!*\
+  !*** external ["wp","i18n"] ***!
+  \******************************/
+(module) {
+
+module.exports = window["wp"]["i18n"];
+
+/***/ },
+
+/***/ "./blocks/copyright/block.json"
+/*!*************************************!*\
+  !*** ./blocks/copyright/block.json ***!
+  \*************************************/
+(module) {
+
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"mosne/copyright","title":"Copyright","description":"Displays a copyright line with the current year and custom text.","category":"widgets","icon":"privacy","keywords":["copyright","year","legal","footer"],"textdomain":"mosne","attributes":{"text":{"type":"string","default":"All rights reserved"}},"supports":{"align":true,"anchor":true,"className":true,"spacing":{"margin":true,"padding":true},"typography":{"fontSize":true,"lineHeight":true,"fontFamily":true},"color":{"text":true,"background":true,"link":false}},"editorScript":"file:../../dist/blocks/copyright/index.js","render":"file:./render.php"}');
+
+/***/ }
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	const __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		const cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		const module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		if (!(moduleId in __webpack_modules__)) {
+/******/ 			delete __webpack_module_cache__[moduleId];
+/******/ 			const e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
+/******/ 		}
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			const getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter/value functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			if(Array.isArray(definition)) {
+/******/ 				var i = 0;
+/******/ 				while(i < definition.length) {
+/******/ 					var key = definition[i++];
+/******/ 					var binding = definition[i++];
+/******/ 					if(!__webpack_require__.o(exports, key)) {
+/******/ 						if(binding === 0) {
+/******/ 							Object.defineProperty(exports, key, { enumerable: true, value: definition[i++] });
+/******/ 						} else {
+/******/ 							Object.defineProperty(exports, key, { enumerable: true, get: binding });
+/******/ 						}
+/******/ 					} else if(binding === 0) { i++; }
+/******/ 				}
+/******/ 			} else {
+/******/ 				for(var key in definition) {
+/******/ 					if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 						Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 					}
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.hasOwn(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+let __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+(() => {
+/*!***********************************!*\
+  !*** ./blocks/copyright/index.js ***!
+  \***********************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./blocks/copyright/block.json");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./blocks/copyright/edit.js");
+
+
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_1__.name, {
+  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
+  save: () => null
+});
+})();
+
+/******/ })()
+;
+//# sourceMappingURL=index.js.map

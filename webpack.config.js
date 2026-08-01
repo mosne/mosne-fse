@@ -30,10 +30,6 @@ module.exports = {
 			process.cwd(),
 			'blocks/circle/index.js'
 		),
-		'blocks/button-url/index': path.resolve(
-			process.cwd(),
-			'blocks/button-url/index.js'
-		),
 		'blocks/archive-works/index': path.resolve(
 			process.cwd(),
 			'blocks/archive-works/index.js'

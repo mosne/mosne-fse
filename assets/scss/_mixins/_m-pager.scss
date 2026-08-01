@@ -1,3 +1,7 @@
+@use '../_config/variables' as *;
+@use './m-breakpoint' as *;
+@use './m-underline' as *;
+
 //
 // Pager
 // generate the MMEC pager style : wp-pagenavi and facetwp pager

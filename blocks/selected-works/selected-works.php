@@ -26,12 +26,16 @@ if ( ! empty( $block['anchor'] ) ) {
 					$color_class    = get_sub_field( 'color_class' );
 					?>
 					<li class="selected-works__tax">
-						<p class="selected-works__tax-label"><?php echo esc_html( get_sub_field( 'title' ) ); ?></p>
+						<p class="selected-works__tax-label">
+							<a href="<?php echo esc_url( get_sub_field( 'link' ) ?? '' ); ?>">
+								<?php echo esc_html( get_sub_field( 'title' ) ?? '' ); ?>
+							</a>
+						</p>
 					</li>
 					<?php foreach ( $selected_works as $selected_work ) : ?>
 						<li class="selected-works__item <?php echo esc_attr( $color_class ); ?>">
 							<a href="<?php echo esc_url( get_permalink( $selected_work) ); ?>"
-							   class="selected-works__link">
+							   class="selected-works__link" aria-label="<?php echo esc_html( get_the_title($selected_work) ); ?>">
 								<span class="selected-works__hover"><?php echo esc_html( get_the_title($selected_work) ); ?></span>
 							</a>
 						</li>

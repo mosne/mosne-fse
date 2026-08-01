@@ -1,3 +1,5 @@
+@use './m-hover' as *;
+
 @mixin underline-not-hover($stroke:1px,$speed:.35s) {
     display: inline;
     text-decoration: none;

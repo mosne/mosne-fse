@@ -1,1 +1,45 @@
-.wp-block-acf-archive-works{--wp--preset--archive-works--sticky-top:10vh;--wp--preset--archive-works--year--font-size:clamp(2rem,10vw,10rem)}.wp-block-acf-archive-works .wp-block-post-template{margin-left:0;padding-left:0}.wp-block-acf-archive-works .wp-block-post{list-style:none;margin:0}.wp-block-acf-archive-works .mosne-archive-works{display:grid;grid-template-columns:auto auto;margin-top:var(--wp--preset--archive-works--sticky-top)}.wp-block-acf-archive-works .mosne-archive-works__section{margin-bottom:var(--wp--preset--spacing--80)}.wp-block-acf-archive-works .mosne-archive-works__col{position:relative}.wp-block-acf-archive-works .mosne-archive-works__year{font-size:var(--wp--preset--archive-works--year--font-size);margin-bottom:var(--wp--preset--spacing--80);margin-top:0}.wp-block-acf-archive-works .mosne-archive-works__year.is-sticky{position:sticky;top:var(--wp--preset--archive-works--sticky-top)}
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/archive-works/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Strip units
+ */
+/**
+ * Em
+ *
+ * convert value from px to em
+ */
+.wp-block-acf-archive-works {
+  --wp--preset--archive-works--sticky-top:10vh;
+  --wp--preset--archive-works--year--font-size: clamp(2rem, 10vw, 10rem);
+}
+.wp-block-acf-archive-works .wp-block-post-template {
+  margin-left: 0;
+  padding-left: 0;
+}
+.wp-block-acf-archive-works .wp-block-post {
+  list-style: none;
+  margin: 0;
+}
+.wp-block-acf-archive-works .mosne-archive-works {
+  margin-top: var(--wp--preset--archive-works--sticky-top);
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.wp-block-acf-archive-works .mosne-archive-works__section {
+  margin-bottom: var(--wp--preset--spacing--80);
+}
+.wp-block-acf-archive-works .mosne-archive-works__col {
+  position: relative;
+}
+.wp-block-acf-archive-works .mosne-archive-works__year {
+  font-size: var(--wp--preset--archive-works--year--font-size);
+  margin-bottom: var(--wp--preset--spacing--80);
+  margin-top: 0;
+}
+.wp-block-acf-archive-works .mosne-archive-works__year.is-sticky {
+  top: var(--wp--preset--archive-works--sticky-top);
+  position: sticky;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

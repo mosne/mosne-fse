@@ -1,4 +1,5 @@
 @use "sass:math";
+@use './f-strip-units' as *;
 
 /**
  * Em
@@ -6,13 +7,13 @@
  * convert value from px to em
  */
 
-@function em($pxval, $base: $font-size-base) {
+@function em($pxval, $base: 16px) {
 
-    @if not unitless($pxval) {
+    @if not math.is-unitless($pxval) {
         $pxval: strip-units($pxval);
     }
 
-    @if not unitless($base) {
+    @if not math.is-unitless($base) {
         $base: strip-units($base);
     }
 

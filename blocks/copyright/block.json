@@ -34,6 +34,5 @@
     }
   },
   "editorScript": "file:../../dist/blocks/copyright/index.js",
-  "style": "file:../../dist/blocks/copyright/style-index.css",
   "render": "file:./render.php"
 }

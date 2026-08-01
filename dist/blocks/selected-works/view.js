@@ -1,1 +1,59 @@
-document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".selected-works").forEach(e=>function(e){const t=e.querySelector(".selected-works__tooltip"),n=e.querySelector(".selected-works__tooltip-label"),o=e.querySelectorAll(".selected-works__link");if(!t||!n||!o.length)return;let r=null;o.forEach(o=>{o.addEventListener("pointerenter",()=>{clearTimeout(r),r=setTimeout(()=>{!function(o){const r=o.querySelector("span");if(!r)return;const l=o.getBoundingClientRect(),i=e.getBoundingClientRect(),c=.5*t.offsetWidth,s=c-.5*l.width,d=c+.5*l.height,u=l.left-i.left-s,a=l.top-i.top-d;n.innerHTML=r.innerHTML,t.style.transform=`translate(${u}px, ${a}px)`}(o)},50)}),o.addEventListener("pointerleave",()=>{clearTimeout(r)})})}(e))});
+/******/ (() => { // webpackBootstrap
+/*!***************************************!*\
+  !*** ./blocks/selected-works/view.js ***!
+  \***************************************/
+/**
+ * Selected Works — vanilla hover tooltip (replaces jQuery + hoverIntent).
+ */
+(function () {
+  const HOVER_DELAY = 50;
+
+  /**
+   * @param {HTMLElement} root
+   */
+  function initSelectedWorks(root) {
+    const tooltip = root.querySelector('.selected-works__tooltip');
+    const tooltipLabel = root.querySelector('.selected-works__tooltip-label');
+    const links = root.querySelectorAll('.selected-works__link');
+    if (!tooltip || !tooltipLabel || !links.length) {
+      return;
+    }
+    let enterTimer = null;
+
+    /**
+     * @param {HTMLElement} link
+     */
+    function showTooltip(link) {
+      const label = link.querySelector('span');
+      if (!label) {
+        return;
+      }
+      const linkRect = link.getBoundingClientRect();
+      const rootRect = root.getBoundingClientRect();
+      const tooltipSize = tooltip.offsetWidth * 0.5;
+      const sizeLeft = tooltipSize - linkRect.width * 0.5;
+      const sizeTop = tooltipSize + linkRect.height * 0.5;
+      const x = linkRect.left - rootRect.left - sizeLeft;
+      const y = linkRect.top - rootRect.top - sizeTop;
+      tooltipLabel.innerHTML = label.innerHTML;
+      tooltip.style.transform = `translate(${x}px, ${y}px)`;
+    }
+    links.forEach(link => {
+      link.addEventListener('pointerenter', () => {
+        clearTimeout(enterTimer);
+        enterTimer = setTimeout(() => {
+          showTooltip(link);
+        }, HOVER_DELAY);
+      });
+      link.addEventListener('pointerleave', () => {
+        clearTimeout(enterTimer);
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.selected-works').forEach(root => initSelectedWorks(root));
+  });
+})();
+/******/ })()
+;
+//# sourceMappingURL=view.js.map
