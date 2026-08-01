@@ -28,6 +28,7 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"defaultPalette": false,
 			"palette": [
 				{
 					"color": "#202124",
@@ -53,6 +54,66 @@
 					"color": "#303134",
 					"name": "Tertiary",
 					"slug": "tertiary"
+				},
+				{
+					"color": "#000000",
+					"name": "Black",
+					"slug": "black"
+				},
+				{
+					"color": "#abb8c3",
+					"name": "Cyan bluish gray",
+					"slug": "cyan-bluish-gray"
+				},
+				{
+					"color": "#ffffff",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#f78da7",
+					"name": "Pale pink",
+					"slug": "pale-pink"
+				},
+				{
+					"color": "#cf2e2e",
+					"name": "Vivid red",
+					"slug": "vivid-red"
+				},
+				{
+					"color": "#ff6900",
+					"name": "Luminous vivid orange",
+					"slug": "luminous-vivid-orange"
+				},
+				{
+					"color": "#fcb900",
+					"name": "Luminous vivid amber",
+					"slug": "luminous-vivid-amber"
+				},
+				{
+					"color": "#7bdcb5",
+					"name": "Light green cyan",
+					"slug": "light-green-cyan"
+				},
+				{
+					"color": "#00d084",
+					"name": "Vivid green cyan",
+					"slug": "vivid-green-cyan"
+				},
+				{
+					"color": "#8ed1fc",
+					"name": "Pale cyan blue",
+					"slug": "pale-cyan-blue"
+				},
+				{
+					"color": "#0693e3",
+					"name": "Vivid cyan blue",
+					"slug": "vivid-cyan-blue"
+				},
+				{
+					"color": "#AC64F3",
+					"name": "Vivid purple",
+					"slug": "vivid-purple"
 				}
 			]
 		},
