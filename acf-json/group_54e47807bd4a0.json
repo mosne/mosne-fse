@@ -46,102 +46,6 @@
             "disabled": 0
         },
         {
-            "key": "field_53aec73e2eefb",
-            "label": "Size",
-            "name": "size_new",
-            "aria-label": "",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "default": "default",
-                "small": "small",
-                "xsmall": "xsmall"
-            },
-            "other_choice": 0,
-            "save_other_choice": 0,
-            "default_value": "default",
-            "layout": "horizontal",
-            "allow_null": 0,
-            "return_format": "value"
-        },
-        {
-            "key": "field_53af5b21cef09",
-            "label": "pulse",
-            "name": "effetti_new",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_55bdea8cd7e26",
-            "label": "Selected Color",
-            "name": "selected_color",
-            "aria-label": "",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "enable_opacity": false,
-            "custom_palette_source": "",
-            "palette_colors": "",
-            "show_color_wheel": true,
-            "return_format": "string"
-        },
-        {
-            "key": "field_55bdeaacd4b0c",
-            "label": "Selected images",
-            "name": "selected_images",
-            "aria-label": "",
-            "type": "gallery",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "library": "all",
-            "translations": "copy_once",
-            "min": "",
-            "max": "",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "insert": "append",
-            "preview_size": "thumbnail"
-        },
-        {
             "key": "field_53aec77c2eefd",
             "label": "Images",
             "name": "images",
@@ -190,5 +94,7 @@
     "description": "",
     "show_in_rest": 1,
     "display_title": "",
-    "modified": 1771514725
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1785567430
 }

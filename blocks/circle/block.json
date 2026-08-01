@@ -2,7 +2,7 @@
   "name": "acf/circle",
   "title": "Circle",
   "description": "Circle block.",
-  "style": "circle",
+  "style": "file:../../dist/blocks/circle/style-index.css",
   "category": "formatting",
   "icon": "admin-comments",
   "keywords": [
