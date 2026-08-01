@@ -122,6 +122,7 @@
 			"wideSize": "1200px"
 		},
 		"spacing": {
+			"customSpacingSize": true,
 			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
@@ -810,7 +811,7 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "1.5rem",
+			"blockGap": "var(--wp--preset--spacing--40)",
 			"padding": {
 				"bottom": "0px",
 				"left": "var(--wp--preset--spacing--30)",

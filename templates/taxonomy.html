@@ -1,21 +1,23 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:template-part {"slug":"breadcrumb","area":"uncategorized","align":"wide"} /-->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:query-title {"type":"archive","showPrefix":false,"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}}} /-->
 
-<!-- wp:query-title {"type":"archive","showPrefix":false,"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}}} /-->
-
-<!-- wp:query {"queryId":26,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":5},"align":"wide","className":"is-style-stagger","layout":{"type":"default"}} -->
-<div class="wp-block-query alignwide is-style-stagger"><!-- wp:post-template {"align":"center"} -->
+<!-- wp:query {"queryId":26,"query":{"perPage":32,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","className":"is-style-stagger","layout":{"type":"default"}} -->
+<div class="wp-block-query alignwide is-style-stagger"><!-- wp:post-template {"align":"center","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"grid","columnCount":5}} -->
 <!-- wp:template-part {"slug":"simple-card-works","area":"uncategorized"} /-->
 <!-- /wp:post-template -->
 
+<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
+<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
 <!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"space-between"}} -->
-<!-- wp:query-pagination-previous {"label":"Newer Posts","fontSize":"medium"} /-->
+<!-- wp:query-pagination-previous {"label":"Previous","fontSize":"medium"} /-->
 
 <!-- wp:query-pagination-numbers {"style":{"typography":{"letterSpacing":"0.5em"}},"fontSize":"large"} /-->
 
-<!-- wp:query-pagination-next {"label":"Older Posts","fontSize":"medium"} /-->
+<!-- wp:query-pagination-next {"label":"Next","fontSize":"medium"} /-->
 <!-- /wp:query-pagination --></div>
 <!-- /wp:query --></main>
 <!-- /wp:group -->
