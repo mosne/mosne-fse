@@ -132,6 +132,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.25em;
+  margin-bottom: 7px !important;
 }
 .wp-block-post-terms__separator {
   display: none;
@@ -163,6 +164,10 @@
 }
 
 .wp-block-post-title {
+  word-break: initial;
+}
+
+.wp-block-post-date {
   word-break: initial;
 }
 
