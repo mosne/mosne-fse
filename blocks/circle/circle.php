@@ -22,6 +22,7 @@ $circle_style = ( ! empty( $color ) ) ? "background-color: $color" : '';
 if( !empty($block['alignText']) ) {
 	$className = 'has-text-align-' . $block['alignText'];
 }
+
 $extra_attrs['class'] = $className ?? '';
 ?>
 <div <?php echo $anchor; ?> <?php echo get_block_wrapper_attributes($extra_attrs); ?>>

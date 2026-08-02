@@ -12,6 +12,14 @@
     width: var(--wp--preset--circle-size);
     height: var(--wp--preset--circle-size);
     border-radius: 100%;
+
+    .work-category-selected &{
+      animation-name: mpulse;
+      animation-duration: .8s;
+      transform-origin: 50% 50%;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear
+    }
   }
   .has-text-align-center .circle,
   &.has-text-align-center .circle {
@@ -24,5 +32,19 @@
   }
   @include breakpoints(medium){
     --wp--preset--circle-size:100px;
+  }
+}
+
+@keyframes mpulse {
+  0% {
+      transform: scale(1)
+  }
+
+  50% {
+      transform: scale(.9)
+  }
+
+  100% {
+      transform: scale(1)
   }
 }

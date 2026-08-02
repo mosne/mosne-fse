@@ -45,7 +45,7 @@ $count          = 0;
 				</h2>
 				<ul class="is-flex-container columns-5 aligncenter wp-block-post-template is-layout-flow">
 					<?php endif; ?>
-					<li class="wp-block-post">
+					<li <?php post_class('wp-block-post'); ?>>
 						<?php block_template_part( 'simple-card-works' ); ?>
 					</li>
 					<?php

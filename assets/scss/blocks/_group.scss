@@ -1,0 +1,21 @@
+@use '../_config/variables' as *;
+@use '../_mixins/mixins' as *;
+
+.wp-block-group {
+  @include breakpoints(medium,max){
+    &.is-style-bento{
+      > *{
+       font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      }
+  }
+ 
+  @include breakpoints(xlarge,max){
+  &.is-style-bento{
+    grid-template-columns:1fr 1fr !important; 
+    > *{
+      grid-column: span 1 !important;
+    }
+    }
+  }
+}

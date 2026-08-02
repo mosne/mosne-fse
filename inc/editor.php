@@ -19,6 +19,15 @@ function register_custom_block_styles(): void {
 			'label' => __( 'Stagger', 'mosne' ),
 		]
 	);
+
+	// 	Group block.
+	register_block_style(
+		'core/group',
+		[
+			'name'  => 'bento',
+			'label' => __( 'Bento', 'mosne' ),
+		]
+	);
 }
 
 add_action( 'init', 'register_custom_block_styles' );
