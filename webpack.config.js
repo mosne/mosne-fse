@@ -43,4 +43,7 @@ module.exports = {
 		...defaultConfig.output,
 		path: path.resolve( process.cwd(), 'dist' ),
 	},
+	plugins: defaultConfig.plugins.filter(
+		( plugin ) => plugin.constructor.name !== 'RtlCssPlugin'
+	),
 };

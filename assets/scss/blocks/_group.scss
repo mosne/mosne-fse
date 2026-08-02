@@ -11,11 +11,14 @@
   }
  
   @include breakpoints(xlarge,max){
-  &.is-style-bento{
+  &.is-style-bento {
     grid-template-columns:1fr 1fr !important; 
-    > *{
-      grid-column: span 1 !important;
-    }
+      > *{
+        grid-column: span 1 !important;
+      }
+      p.has-background {
+        padding: 1.25em;
+      }
     }
   }
 }
